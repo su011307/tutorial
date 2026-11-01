@@ -30,7 +30,7 @@ source /opt/ros/<ROS 版本代号>/setup.bash  # 版本代号可以 ls /opt/ros 
 
 ### 注意
 
-如果已经按照 [教程](../swe/ros/index.md) 安装好了 ROS 2 的话，是不需要安装 [PCL]() 和 [Eigen]()（线性代数计算） 的。不过保险起见，还是执行以下下面的命令确保我们接下来依赖的库已经被正确安装了
+如果已经按照 [教程](../swe/ros/index.md) 安装好了 ROS 2 的话，是不需要安装 [PCL](https://pointclouds.org/) 和 [Eigen](https://eigen.tuxfamily.org/)（线性代数计算） 的。不过保险起见，还是执行以下下面的命令确保我们接下来依赖的库已经被正确安装了
 
 ```bash
 sudo apt update && sudo apt upgrade
@@ -39,7 +39,7 @@ sudo apt install libpcl-dev libeigen-dev
 
 # 安装数据处理库
 
-激光雷达的驱动本身只是返回一堆点云数据，但是关于 [畸变](concept.md) 等的处理则需要我们负责。不过好消息是开源社区已经为我们完成了这部分内容的编写，我们不必自己动手 😄
+激光雷达的驱动本身只是返回一堆点云数据，但是关于 [畸变](index.md#小问题) 等的处理则需要我们负责。不过好消息是开源社区已经为我们完成了这部分内容的编写，我们不必自己动手 😄
 
 我们会用到 [`FAST_LIO_ROS2`](https://github.com/Ericsii/FAST_LIO_ROS2) 这个库，它是 `FAST_LIO` 在 ROS 2 上的移植，并且已经帮我们完成了很多脏活累活的处理。安装它：
 
