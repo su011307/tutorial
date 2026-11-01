@@ -1,6 +1,6 @@
 # 安装驱动
 
-所有的硬件都需要驱动程序来驱动它们，激光雷达也不例外。不过好消息是，官方已经维护了一套 [SDK](https://github.com/Livox-SDK/Livox-SDK2)（软件开发工具包，顾名思义）和 [ROS2 驱动](https://github.com/Livox-SDK/livox_ros_driver2)，我们不必自动重复造轮子，只需要将它们安装并编译即可。如果想要理解下面的代码在做什么，最好有 [Git](../swe/proj-mng/git.md) 和 [CMake](../swe/proj-mng/cmake.md) 的基础
+所有的硬件都需要驱动程序来驱动它们，激光雷达也不例外。不过好消息是，官方已经维护了一套 [SDK](https://github.com/Livox-SDK/Livox-SDK2)（软件开发工具包，顾名思义）和 [ROS2 驱动](https://github.com/Livox-SDK/livox_ros_driver2)，我们不必自动重复造轮子，只需要将它们安装并编译即可。如果想要理解下面的代码在做什么，最好有 [Git](../swe/projmng/git.md) 和 [CMake](../swe/projmng/cmake.md) 的基础
 
 ## `Livox-SDK2`
 
